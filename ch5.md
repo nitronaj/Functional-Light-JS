@@ -1,4 +1,4 @@
-# ch5
+# Chapter 5: Reducing Side Effects
 
 ## Functional-Light JavaScript
 

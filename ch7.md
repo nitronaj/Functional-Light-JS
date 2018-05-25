@@ -1,4 +1,4 @@
-# ch7
+# Chapter 7: Closure vs. Object
 
 ## Functional-Light JavaScript
 

@@ -1,4 +1,4 @@
-# apB
+# Appendix B: The Humble Monad
 
 ## Functional-Light JavaScript
 

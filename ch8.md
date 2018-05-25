@@ -1,4 +1,4 @@
-# ch8
+# Chapter 8: Recursion
 
 ## Functional-Light JavaScript
 
@@ -39,19 +39,19 @@ function foo(x) {
 
 Let's visualize what happens with this function when we call `foo( 16 )`:
 
-![](../.gitbook/assets/fig13.png)
+![](.gitbook/assets/fig13.png)
 
 In step 2, `x / 2` produces `8`, and that's passed in as the argument to a recursive `foo(..)` call. In step 3, same thing, `x / 2` produces `4`, and that's passed in as the argument to yet another `foo(..)` call. That part is hopefully fairly straightforward.
 
 But where someone may often get tripped up is what happens in step 4. Once we've satisfied the base condition where `x` \(value `4`\) is `< 5`, we no longer make any more recursive calls, and just \(effectively\) do `return 4`. Specifically the dotted line return of `4` in this figure simplifies what's happening there, so let's dig into that last step and visualize it as these three sub-steps:
 
-![](../.gitbook/assets/fig14.png)
+![](.gitbook/assets/fig14.png)
 
 Once the base condition is satisfied, the returned value cascades back through all of the current function calls \(and thus `return`s\), eventually `return`ing the final result out.
 
 Another way to visualize this recursion is by considering the function calls in the order they happen \(commonly referred to as the call stack\):
 
-![](../.gitbook/assets/fig19.png)
+![](.gitbook/assets/fig19.png)
 
 More on the call stack later in this chapter.
 
@@ -323,7 +323,7 @@ baz();
 
 Visualizing this program's stack frames step by step:
 
-![](../.gitbook/assets/fig15.png)
+![](.gitbook/assets/fig15.png)
 
 **Note:** If these functions didn't call each other, but were just called sequentially -- like `baz(); bar(); foo();`, where each one finishes before the next one starts -- the frames won't stack up; each function call finishes and removes its frame from the stack before the next one is added.
 
@@ -343,7 +343,7 @@ Fortunately, a powerful observation was made in those early days that still offe
 
 The idea is that if a call from function `baz()` to function `bar()` happens at the very end of function `baz()`'s execution -- referred to as a tail call -- the stack frame for `baz()` isn't needed anymore. That means that either the memory can be reclaimed, or even better, simply reused to handle function `bar()`'s execution. Visualizing:
 
-![](../.gitbook/assets/fig16.png)
+![](.gitbook/assets/fig16.png)
 
 Tail calls are not really directly related to recursion, per se; this notion holds for any function call. But your manual non-recursion call stacks are unlikely to go beyond maybe 10 levels deep in most cases, so the chances of tail calls impacting your program's memory footprint are pretty low.
 

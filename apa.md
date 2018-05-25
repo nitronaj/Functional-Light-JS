@@ -1,4 +1,4 @@
-# apA
+# Appendix A: Transducing
 
 ## Functional-Light JavaScript
 

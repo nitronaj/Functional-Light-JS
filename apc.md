@@ -1,4 +1,4 @@
-# apC
+# Appendix C: FP Libraries
 
 ## Functional-Light JavaScript
 
