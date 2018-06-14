@@ -1,12 +1,8 @@
 # Functional-Light JavaScript
 
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
-
 [![Book Cover](.gitbook/assets/front-cover-small.png)](https://leanpub.com/fljs)
 
 This book is a balanced, pragmatic look at FP in JavaScript. The first edition is now complete. Read here online **for free**, or:
-
- [![Buy on Leanpub](https://img.shields.io/badge/Buy-Leanpub-yellow.svg)](https://leanpub.com/fljs) [![Buy on Amazon](https://img.shields.io/badge/Buy-Amazon-yellow.svg)](http://amazon.fljsbook.com)
 
 "Functional-Light JavaScript" explores the core principles of functional programming \(FP\) as they are applied to JavaScript. But what makes this book different is that we approach these principles without drowning in all the heavy terminology. We look at a subset of FP foundational concepts that I call "Functional-Light Programming" \(FLP\) and apply it to JavaScript.
 
@@ -48,8 +44,6 @@ This book has been published [and is now available for purchase on Leanpub](http
 [![Buy on Leanpub](https://img.shields.io/badge/Buy-Leanpub-yellow.svg)](https://leanpub.com/fljs)
 
 If you'd like to contribute financially towards the effort \(or any of my other OSS work\) aside from purchasing the book, I do have a [patreon](https://www.patreon.com/getify) that I would always appreciate your generosity towards.
-
-[![patreon.png](https://s13.postimg.org/k9nkc5thz/become_a_patron_button.png)](https://www.patreon.com/getify)
 
 ## In-person Training
 
